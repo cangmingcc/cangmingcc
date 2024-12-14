@@ -21,5 +21,6 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
     public virtual void Awake()
     {
         instance = this as T;
+        Debug.log("单例创建成功")
     }
 }
